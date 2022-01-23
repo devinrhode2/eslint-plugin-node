@@ -29,6 +29,23 @@ if(config.env === "development") {
 }
 ```
 
+## Rule Options
+
+You can customize the error message for this rule:
+
+```js
+{
+  rules: {
+    'node/no-process-env': [
+      'error',
+      {
+        customMessage: "Use the env wrapper instead.",
+      },
+    ],
+  },
+}
+```
+
 ## 🔎 Implementation
 
 - [Rule source](../../lib/rules/no-process-env.js)
